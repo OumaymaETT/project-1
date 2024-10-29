@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/vitrine.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+.main {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.logo img {
+    float: left;
+    width: 150px;
+    height: auto;
+}
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+ul li {
+    display: inline-block;
+}
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+ul li.active a {
+    background-color: #fff;
+    color: #000;
+}
+.sub-menu {
+    display: none;
+    top: 6%;
+    position: relative;
+}
+.sub-menu ul {
+    position: absolute;
+}
+.main ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background-color: rgb(0, 45, 117);
+    margin-top: 12px;
+    margin-left: -8px;
+}
+.main ul li:hover .sub-menu ul {
+    display: block;
+    margin: 6px;
+}
+.main ul li:hover .sub-menu ul li {
+    width: 75px;
+    padding: 5px;
+    border-bottom: 1px#fff;
+    background: transparent;
+    transition: 0.4s ease;
+    text-align: left;
+    border-radius: 0;
+}
+.main ul li:hover .sub-menu ul li:last-child {
+    border-bottom: none;
+}
+.hero {
+    text-align: center;
+    color: white;
+    padding: 120px 20px;
+}
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.btn {
+    background-color: #e67e22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #d57d1c;
+}
+.features {
+    margin-top: 60px;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.feature-item {
+    margin-top: 10px;
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+.feature-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.feature-item i {
+    font-size: 40px;
+    color: #e67e22;
+}
+.features h3 {
+    margin: 15px 0;
+}
+.testimonials {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.testimonial-item {
+    margin: 20px;
+    font-style: italic;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.about-us {
+    text-align: center;
+    padding: 60px 20px;
+}
+.about-us h1 {
+    font-size: 36px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+}
+.contact-us {
+    text-align: center;
+    padding: 1px 5px;
+    margin-bottom: 60px;
+}
+.contact-us h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-top: 85px;
+    color: #fff;
+}
+.contact-us p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.contact-us form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+.contact-us label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #fff;
+}
+.yourclass {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 0px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.contact-us textarea {
+    resize: vertical;
+    height: 50px;
+    width: 100%;
+    max-width: 100%;
+    padding: 8px;
+}
+button[type="submit"] {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button[type="submit"]:hover {
+    background-color: #d57d1c;
+}
+.locations {
+    margin-top: 5px;
+    text-align: center;
+    padding: 60px 20px;
+}
+.locations h2 {
+    font-size: 36px;
+    margin-top: 30px;
+    color: #fff;
+}
+.location-item {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+    padding: auto;
+}
+.location-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.location-item h3 {
+    font-size: 24px;
+}
+.location-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+.city-locations {
+    text-align: center;
+    padding: 60px 20px;
+}
+.city-locations h2 {
+    margin-top: 80px;
+    font-size: 36px;
+    color: #fff;
+}
+.city-location-item {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+.city-location-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.city-location-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.city-location-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+/* Gallery Section Styles */
+.gallery {
+    padding: 60px 20px; /* Add padding for spacing */
+    text-align: center; /* Center align the text */
+}
+
+.gallery h2 {
+    font-size: 36px; /* Title font size */
+    margin-bottom: 30px; /* Spacing below title */
+    color: #fff; /* Darker color for the title */
+}
+
+.gallery-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the items */
+    flex-wrap: wrap; /* Wrap items to the next line if necessary */
+}
+
+.gallery-item {
+    width: 30%; /* Responsive width for gallery items */
+    margin: 10px; /* Margin for spacing */
+    overflow: hidden; /* Hide overflow */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.gallery-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+
